@@ -1,0 +1,617 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Inica Encabezado*/
+
+header{
+    width: 100%;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    background-color: white;
+    align-items: center;
+    z-index: 1;
+
+}
+
+#head{     
+    flex-direction: row;
+    flex-wrap: wrap;      
+    margin: auto;
+    width: 100%;
+    display: flex;        
+    box-shadow: 0em .4em .4em rgb(196, 196, 196); 
+    height: 5em;
+
+}
+
+.transversal{
+    max-width: 11em;  
+    margin: auto;      
+}
+
+.transversal img{
+    width: auto;
+    max-width: 11em;
+    margin: auto; 
+}
+
+.logomovil{
+    display: none;
+}
+
+.menu{    
+    margin: auto;    
+    width: 45em;
+    justify-content: space-between; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.menu a{
+    width: auto;
+    text-align: center;
+    font-size: 1em;
+    text-decoration: none;   
+    font-weight: 400;
+    color: #9F94C7;
+    height: 2em;
+}
+
+.menu a:hover{
+    color: #524A7B;
+    font-weight: 600;
+}
+
+.logo{
+    max-width: 11.25em;    
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;    
+}
+
+.logo img{
+    max-width: 8em;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    width: 100%; 
+    margin: auto;
+}
+
+.redes img{     
+    display: flex;
+    max-width: 1.5em;
+    margin: .3em;
+}
+
+@media all and (max-width:1180px) {
+ 
+    .logo {
+        display: none;          
+    }
+
+    .logos{
+        width: 100%;
+        align-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+
+    }
+
+    .logos img{
+        max-width: 6em;
+    }
+   
+    .logomovil{    
+        margin: auto;
+        display: flex;
+    }
+
+}
+
+@media all and (max-width:768px) {
+ 
+    .logo {
+        display: none;          
+    }  
+    
+    .menu{
+        font-size: .8em;
+        margin: .2em;
+    }
+}
+
+/*Fin del Encabezado*/
+
+#separador{
+    background-color: white;
+    height: 3em;
+    width: 100%;
+}
+
+section{   
+    width: 100%;  
+}
+/*Inicia Acerca de*/
+
+#acerca{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;  
+    align-content: space-between;  
+    padding-top: 5em;    
+  
+}
+
+.gift{    
+    width: 15%; 
+    padding-left: 1.5em; 
+    display: flex;
+    margin-bottom: auto;
+}
+
+.gift img{
+    width: 100%;
+   
+}
+
+
+#slider{    
+    width:85%;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    padding-right: 1.5em;
+    display: flex;
+    margin-bottom: auto;
+}
+
+.carrousel {
+    width: 100%;  
+    padding: 0em;
+    color: var(--negro);
+    transition: all 0.4s ease;    
+    overflow: hidden;   
+}  
+
+.carrousel .grande {
+    width: 300%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--negro);
+    transition: all 0.4s ease;    
+    background-color: var(--blanco);  
+    padding: 0em;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+}
+
+.carrousel .img {
+    width: calc( 100% / 3 ); 
+    color: var(--negro);
+    transition: all 0.4s ease;
+    background-color: var(--blanco);    
+}
+
+.carrousel .puntos {
+    width: 100%;   
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+  
+.carrousel .punto {
+    color: var(--negro);
+    transition: all 0.4s ease;
+    background-color: var(--blanco);    
+    list-style: none;
+    color: #9F94C7;  
+    font-size: 2em;  
+    margin-right: .5em;  
+}
+  
+.carrousel .punto.activo {
+    color: #524A7B;
+}
+
+@media all and (max-width:768px) {
+    .carrousel .punto{
+        font-size: 1em;}
+}
+
+@media all and (max-width:480px) {
+    .gift{
+        display: none;
+    }
+
+    #slider{
+        width: 100%;
+        padding: 0em;
+    }
+
+   
+}
+ 
+
+/*Finaliza Acerca de*/
+
+/*Inicia Descargas*/
+
+#descarga{
+    background-image: url(../img/Descarga\ el\ informe.png);  
+    background-size: cover;   
+    display: flex;
+    flex-flow: row nowrap;  
+
+}
+
+#prev-informe{
+    width: 75%; 
+    display: flex; 
+    align-content: center;
+}
+
+/*#prev-informe embed{
+    display: flex;
+    padding: 1.5em;
+    margin: auto;
+    width: 50em;  
+}*/
+
+.reporte{
+    width:100%;
+    display: flex;
+    flex-flow: wrap;
+    align-content: center;    
+    padding-top: 1em;
+    padding-bottom: 3em;
+    padding: 6em;  
+    background-color: aquamarine;
+}
+
+.reporte img {
+    width:100%;
+    max-width: 35em;
+    display: flex;        
+    align-content: center;    
+    flex-flow: wrap; 
+         
+
+}
+
+.botones{
+    width: 25%;
+    display: flex;    
+    flex-flow: column;
+    align-content: center;
+    margin: auto;
+}
+
+.botones button{
+    font-size: 1em;
+    height: 2em;
+    width: 13em;    
+    background-color: #E8EA9A;
+    border-radius: .8em;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    margin: .5em; 
+    font-family: 'Montserrat', sans-serif;  
+    color: #524A7B;
+    font-weight: 400;
+}
+
+.botones button:hover{
+    
+    font-weight: 600;
+} 
+
+@media all and (max-width:768px) {
+    
+    #descarga{
+        display: flex;
+        flex-flow: column;
+        margin: auto;
+        width: 100%;
+        align-content: center;
+    }  
+    
+    .reporte{
+        padding: 1em;
+    }
+
+    .botones{
+        width:100%;
+        display: flex;
+        flex-flow: wrap;
+        margin: auto;
+        align-content: space-between;
+        padding-bottom: 1em;
+    
+    }
+
+   .botones button{
+       margin: auto;
+       font-size: .8em;
+
+    }
+
+}
+/*Fin de Descargas*/
+
+/*Inicia Hallazgos*/
+#hallazgos{
+    background-image: url(../img/Hallazgos.png); 
+    background-size: cover;   
+    display: flex;
+    flex-flow: row nowrap;   
+}
+
+#graficos{    
+    width:100%; 
+    margin-top:3em;
+    margin-bottom: 4em;
+}
+
+.carrousel2 {
+    width: 60%; 
+    color: var(--negro);
+    transition: all 0.4s ease;    
+    overflow: hidden; 
+    margin: auto;   
+    justify-content: center;
+}  
+
+.carrousel2 .grande2 {
+    width: 1000%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--negro);
+    transition: all 0.4s ease;    
+    background-color: var(--blanco);  
+    padding: 0em;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+}
+
+.carrousel2 img {
+    width: calc( 100% / 10 ); 
+    color: var(--negro);
+    transition: all 0.4s ease;
+    background-color: var(--blanco);    
+}
+
+.carrousel2 .puntos2 {
+    width: 100%;   
+    display: flex;   
+    justify-content: center;
+    align-items: center; 
+
+}
+  
+.carrousel2 .punto2 {
+    color: var(--negro);
+    transition: all 0.4s ease;
+    background-color: var(--blanco);    
+    list-style: none;
+    color: #9F94C7;  
+    font-size: 2em; 
+    margin-right: .5em;
+}
+  
+.carrousel2 .punto2.activo{
+    color: #524A7B;  
+}
+
+@media all and (max-width:768px) {
+    .carrousel2 .punto2{
+        font-size: 1em;}
+
+    .carrousel2 {
+        width: 80%;
+    }
+} 
+
+/*Fin de Hallazgos*/
+
+/*Inicia Entrevistas*/
+
+#entrevistas{
+    background-image: url(../img/Entrevistas.png); 
+    background-size: cover;
+    height: auto;
+    padding-top: 5em;
+    padding-bottom: 5.5em;
+}
+
+.capitulos{
+    display: flex;
+    flex-flow: wrap;  
+    margin: auto;
+    width: 100%;    
+}
+
+.capitulospotify{
+    display: flex;
+    flex-flow: wrap;  
+    margin: auto;
+    width: 45%;
+    align-content: center;
+}
+
+.spotify{
+
+    display: flex;
+    flex-flow: wrap;  
+    margin: auto;
+    width: 100%;
+
+}
+
+.spotify iframe{
+    display: flex;
+    flex-flow: wrap;  
+    margin: auto;
+    width: 100%;
+    height: 14.5em;
+}
+
+.capitulospotify button{
+    font-size: 1em;
+    height: auto;
+    width: auto;    
+    background-color: #E8EA9A;
+    border-radius: .8em;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    margin-top: 1em;
+    font-family: 'Montserrat', sans-serif;  
+    color:#524A7B;
+    font-weight: 400;
+    padding:  .5em;
+}
+
+.capitulospotify button:hover{   
+    font-weight: 600;    
+} 
+
+#capitulosyou{
+    display: flex;
+    flex-flow: column;  
+    margin: auto;
+    background-color: white;
+    padding: .8em;
+}
+
+.capitulosyou iframe{
+    margin: auto;
+    padding: .8em;
+    width: 100%;
+    max-width: 12em;
+    height: 8em;    
+}
+
+@media all and (max-width:768px) {
+    .entrevistas{
+        display: flex;
+        flex-flow: wrap;
+        margin: auto;
+    }
+
+    .capitulospotify{
+        display: flex;
+        flex-flow: wrap;  
+        margin: auto;
+        width: 100%;
+        padding: 1em;     
+    }
+
+}
+
+/*Fin de Entrevistas*/
+
+/*Inicio Footer*/
+
+footer{
+    background-color: #E5D7C0;
+}
+/*Fin de Footer*/
+
+.pie.de.pagina{
+    display: flex;
+    flex-flow: wrap;  
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    padding: 3em;
+}
+
+.transversalgris{
+    max-width: 12em;       
+    display: flex;
+    flex-flow: wrap;  
+    margin: auto;
+    width: 100%;
+}
+
+.transversalgris img{
+    width: auto;
+    max-width: 11em;
+    margin: auto; 
+}
+
+.contacto{
+    max-width: 20em;       
+    display: flex;
+    flex-flow: wrap;  
+    margin: auto;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+}
+
+.contacto .p{         
+    display: flex;
+    flex-flow: wrap;  
+    margin: auto;
+}
+
+.contacto .redes2{
+    display: flex;
+    flex-direction: row;  
+    padding: 3.4em; 
+    padding-top: 1em;
+    width: 100%; 
+    margin: auto; 
+}
+
+.redes2 img{     
+    display: flex;
+    max-width: 1.5em;
+    margin: .3em;
+}
+
+.logoconsul{
+    max-width: 12em;       
+    display: flex;
+    flex-flow: wrap;  
+    margin: auto;
+    width: 100%;
+}
+
+.logoconsul img{
+    width: auto;
+    max-width: 9em;
+    margin: auto; 
+}
+
+
+
